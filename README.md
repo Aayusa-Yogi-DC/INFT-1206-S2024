@@ -1,6 +1,7 @@
 
 <ol>
-    <a href="/INFT-1206-S2024/Class_Notes/HTML/">HTML</a>
+    <li>
+        <a href="/INFT-1206-S2024/Class_Notes/HTML/">HTML</a>
         <ul>
             <li><a href="/Class_Notes/HTML/HTML_Intro/index.html">HTML Intro</a></li>
             <li><a href="/Class_Notes/HTML/HTML_Intro/blog.html">blog_ICA</a></li>
@@ -12,7 +13,7 @@
 
 <ol>
     <li>
-        <a href="/INFT-1206-S2024/Assignments/">Assignments</a>
+        <a href="/INFT-1206-S2024/Assignments/">Assignments<a>
         <ul>
             <li><a href="/Assignments/Assignment_1/Assignment1_index.html">Assignment_1</a></li>
             <li><a href="/Assignments/Assignment_2/Assignment2_index.html">Assignment_2</a></li>
