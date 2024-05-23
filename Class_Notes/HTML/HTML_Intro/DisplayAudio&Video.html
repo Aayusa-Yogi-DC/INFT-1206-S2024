@@ -1,0 +1,64 @@
+<!--
+	Name: Aayusa Yogi
+	File: Audio&Video.html
+	Date: 22 May 2024
+	Activity inserting audio and video in html.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>h1{color:yellow;
+        background-color: black;}
+        p{color: purple;
+        background-color: black;}
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width">
+        <title> Audio&Video </title>
+    </head>
+    <body>
+        <center><h1>Sample for inserting video and audio in a Html</h1></center>
+        <center><h2>A short introduction video for Markhu by Nepal Tourism Board.</h2></center>
+
+        <video
+        controls
+        width="1400"
+        height="300"
+        autoplay
+        loop
+        muted
+        preload="auto"
+        poster="poster.png">
+        <source src="video.mp4" type="video/mp4" />
+        <source src="video.webm" type="video/webm" />
+            <p>
+            Your browser doesn't support this video. Here is a
+            <a href="video.mp4">link to the video</a> instead.
+            </p>
+        </video>
+
+
+        <center>
+            <audio 
+            controls
+            width="600"
+            height="300"
+            muted
+            autoplay
+            loop
+            preload="auto">
+            <source src="Music From East Nepal 3.0.mp3" type="audio/mp3" />
+                <p>
+                Your browser doesn't support this audio file. Here is a
+                <a href="Music From East Nepal 3.0.mp3">link to the audio</a> instead.
+                </p>
+            </audio>
+            </center>
+        <p>Markhu is a beautiful village that lies around the famous man-made Kulekhani Dam in Nepal.
+        This place lies in the Indrasarowar Rural Municipality of Makwanpur District in the Bagmati Province of Nepal.
+        Moreover, this place is one of the nearest places from Kathmandu to escape from Kathmandu Valley with your friends and family.</p>
+        <end>________________________________________________________________________________________________________________________________________________________________________</end>
+    </body>
+</html>
