@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://127.0.0.1:5500/DisplayAudio&Video.html -->
+<html lang="en" coupert-item="9AF8D9A4E502F3784AD24272D81F0381"><style class="adjust-screen-brightness" media="screen">html::before {
+  content: " ";
+  z-index: 2147483647;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+}</style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>h1{color:yellow;
+        background-color: black;}
+        p{color: purple;
+        background-color: black;
+        </style>
+        
+        <meta name="viewport" content="width=device-width">
+        <title> Audio&amp;Video </title>
+    </head>
+    <body>
+        <center><h1>Sample for inserting video and audio in a Html</h1></center>
+        <center><h2>A short introduction video for Markhu by Nepal Tourism Board.</h2></center>
+
+        <video controls="" width="1400" height="300" autoplay="" loop="" muted="" preload="auto" poster="poster.png">
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+            <p>
+            Your browser doesn't support this video. Here is a
+            <a href="http://127.0.0.1:5500/video.mp4">link to the video</a> instead.
+            </p>
+        </video>
+
+
+        <center>
+            <audio controls="" width="600" height="300" autoplay="" muted="" loop="">
+            <source src="Music From East Nepal 3.0.mp3" type="audio/mp3">
+                <p>
+                Your browser doesn't support this audio file. Here is a
+                <a href="http://127.0.0.1:5500/Music%20From%20East%20Nepal%203.0.mp3">link to the audio</a> instead.
+                </p>
+            </audio>
+            </center>
+        <p>Markhu is a beautiful village that lies around the famous man-made Kulekhani Dam in Nepal.
+        This place lies in the Indrasarowar Rural Municipality of Makwanpur District in the Bagmati Province of Nepal.
+        Moreover, this place is one of the nearest places from Kathmandu to escape from Kathmandu Valley with your friends and family.</p>
+        <end>________________________________________________________________________________________________________________________________________________________________________</end>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
