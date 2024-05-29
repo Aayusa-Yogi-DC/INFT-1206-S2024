@@ -13,45 +13,43 @@
 	<title>Assignment1: Marking Up A Letter</title>
 	<style>
 		body {
-  	max-width: 800px;
-  	margin: 0 auto;
-	}
+  		max-width: 800px;
+  		margin: 0 auto;
+		}
 
-	.sender-column {
-  	text-align: right;
-	}
+		.sender-column {
+  		text-align: right;
+		}
 
-	h1 {
-  	font-size: 1.5em;
-	}
+		h1 {
+  		font-size: 1.5em;
+		}
 
-	h2 {
-  	font-size: 1.3em;
-	}
+		h2 {
+  		font-size: 1.3em;
+		}
 
-	p,ul,ol,dl,address {
-  	font-size: 1.1em;
-	}
+		p,ul,ol,dl,address {
+  		font-size: 1.1em;
+		}
 
-	p, li, dd, dt, address {
-  	line-height: 1.5;
-	s}
+		p, li, dd, dt, address {
+  		line-height: 1.5;
+		}
 
 	</style>
 </head>
 <body>
-
-	<P ><em><strong>Dr.Eleanor Gaye</strong></em></P>
-	<P><em>Awesome Science faculty</em></P>
-	<P><em>University of Awesome</em></P>
-	<address><em>Bobtown, CA 99999,</em></address>
-	<address><em>USA</em></address>
-	<P><em><strong>Tel: 123-456-7890</strong></em></P>
-	<P><em><strong>Email: no_reply@example.com</strong></em></P>
-	<P><time datetime="2016-01-20">20 January 2016</time></P>
-
-</br>
-</br>
+	<div class="sender-column">
+		<P ><em><strong>Dr.Eleanor Gaye</strong></em></P>
+		<P><em>Awesome Science faculty</em></P>
+		<P><em>University of Awesome</em></P>
+		<address><em>Bobtown, CA 99999,</em></address>
+		<address><em>USA</em></address>
+		<P><em><strong>Tel</strong>: 123-456-7890</em></P>
+		<P><em><strong>Email</strong>: no_reply@example.com</em></P>
+		<P><time datetime="2016-01-20">20 January 2016</time></P>
+	</div>
 
 	<p><em><strong>Miss Eileen Dover</strong></em></p>
 	<address><em>4321 Cliff Top Edge</em></address>
@@ -76,7 +74,7 @@
 
 	<p>Please let me know if this is ok, and if so which start date you would prefer.</p>
 
-	<p>You can find more information about <a href="important university dates"></a> on our website.</p>
+	<p>You can find more information about <a href="https:">important university dates</a> on our website.</p>
 
 
 	<h2>Subjects of study</h2>
@@ -104,11 +102,14 @@
 			<dd>An interesting example of historic misinformation, English explorers in the 1960s believed to have discovered a new dance style characterized by "robotic", stilted movements, being practiced by inhabitants of Northern Alaska and Canada. Later on however it was discovered that they were just moving like this because they were really cold.</dd>
 	</dl>
 
-	<p>For more of my research, see my exotic dance research page.</p>
+	<p>
+		For more of my research, see <a href="https://www.danceresearch.org/en-US/">exotic dance research page</a>.
+	</p>
 
 	<p>Yours sincerely,</p>
 	<p>Dr Eleanor Gaye</p>
 	<p>University of Awesome motto: "Be awesome to each other." -- <em>The memoirs of Bill S Preston,<abr>Esq</abr></em></p>
+
 	
 </body>
 </html>
