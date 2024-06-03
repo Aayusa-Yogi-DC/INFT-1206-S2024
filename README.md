@@ -9,9 +9,9 @@
         </ul>
     </li>
     <li>
-        <a href="Assignments/">Assignments</a>
+        <a href="Assignments">Assignments</a>
         <ul>
-            <li><a href="Assignments/Assignment_1/Assignment1-Part1/">Assignment_1</a></li>
+            <li><a href="Assignments/Assignment_1/Assignment1-Part1">Assignment_1</a></li>
                 <ol>
                     <li><a href="Assignments/Assignment_1/Assignment1-Part1/Assignment1-Part1.html">Assignment1-Part1</a></li>
                     <li><a href="Assignments/Assignment_1/Assignment1-Part2/Assignment1-Part2.html">Assignment1-Part2</a></li>
