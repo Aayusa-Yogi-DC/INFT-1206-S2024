@@ -23,7 +23,7 @@
             <li><a href="Assignments/Assignment_3">Assignment_3</a></li>
                 <ol>
                     <li><a href="Assignments/Assignment_3/Assignment3_index.html">Assignment3_index</a></li>
-                </ol>ss
+                </ol>
             <li><a href="Assignments/Assignment_4">Assignment_4</a></li>
                 <ol>
                     <li><a href="Assignments/Assignment_4/Assignment4_index.html">Assignment4_index</a></li>
