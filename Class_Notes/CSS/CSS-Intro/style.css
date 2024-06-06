@@ -1,0 +1,54 @@
+/* so the priority is what helps us understand which css properties will resolve in the case of a conflict !!
+    - highest priority goes to inline styling
+    - medium priority goes to internal styling
+    - least priority goes to external styling
+*/
+
+body{
+    background-color: green;
+}
+
+/* The # is how we target elements using their id*/
+#title{
+    border: 3px solid purple;
+}
+/* The . is how we target elements using their class name */
+.title {
+    border: 3px solid blue;
+}
+
+/* Using the Tag Selector*/
+h1{
+    border: 3px solid red !important;
+}
+/* In scenario of conflict, the following hierarchy applies: 
+-- Super highest priority -> ! important
+-- highest priority -> Ids
+-- medium priority -> Classes
+-- low priority -> Tag Names
+
+
+classes are more generic
+id is just one specific */
+
+body{
+    /*width:100px;*/
+}
+
+/* div {}*/
+div#parent-container{
+    border: 2px solid black;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+div.child-container{
+    border: 2px solid red;
+    display: block;
+}
+
+/*-- div is actually divison 
+to center elements is to use auto in margin 
+like margin: 0 auto -->
+margin is outisde the boreder
+padding is inside the boarder , like between the boreder and the element
