@@ -17,7 +17,7 @@
 
       html {
         font-family: 'Open Sans', sans-serif;
-        background: url(pattern.png);
+        background-image: url('pattern.png');
       }
 
       body {
@@ -181,15 +181,11 @@
       <div class="red-panda">
         <!-- insert picture element -->
         <picture>
-          <source
-          media="(max-width: 600px)"
-          srcset="red-panda-600px.jpg">
-          <img
-          src="red-panda-1200px.jpg "
-          alt="a red panda">
+          <source media="(max-width: 600px)" srcset="red-panda-potrait.jpg">
+          <source media="(min-width: 601px)" srcset="red-panda-1200px.jpg">
+          <img src="red-panda-1200px.jpg" alt="a red panda">
         </picture>
       </div>
-
     </main>
   </body>
 </html>
