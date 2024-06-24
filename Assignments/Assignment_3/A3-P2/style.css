@@ -3,3 +3,20 @@ html {
 }
 
 /* Your CSS below here */
+
+.styled-box{
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  font-size: 1.125rem;
+
+  background-color: #e0e0e0;
+
+}
