@@ -3,20 +3,32 @@ html {
 }
 
 /* Your CSS below here */
-
-.styled-box{
-  width: 200px;
-  height: 150px;
+div {
+  /* sizing and position */
+  width: 250px;
+  line-height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 0 auto;
 
-  text-align: center;
-
+  /* text */
+  /*As default font size is 16px, and calculated an exact rem value (e.g. 17/16), or approximated it and checked it in the browser dev tools*/
   font-size: 1.125rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 
-  background-color: #e0e0e0;
+  /* border */
+  border-radius: 15px;
+  border: 1px solid #d3d3d3;
+
+  /* background */
+  background-color: red;
+  background-image: linear-gradient(to top left, transparent 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0) 100%);
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Standard shadow */ 
+  inset: 0 -1px 0 rgba(255, 255, 255, 0.3); /* Top left white inset shadow */
+  inset: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Bottom right black inset shadow */
 
 }
