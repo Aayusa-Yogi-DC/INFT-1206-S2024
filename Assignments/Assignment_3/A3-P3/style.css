@@ -48,26 +48,34 @@ header, footer {
 /* font imports */
 
 @font-face {
-  font-family:'Times New Roman', Times, serif;
-  src: url();
+  font-family: 'abhaya_librebold';
+  src: url('abhayalibre-bold-webfont.woff2') format('woff2'),
+       url('abhayalibre-bold-webfont.woff') format('woff'),
+       url('abhayalibre-bold-webfont.ttf') format('truetype'),
+       url('abhayalibre-bold-webfont.svg#abhaya_librebold') format('svg');
   font-weight: normal;
   font-style: normal;
+
 }
 
 @font-face {
-  font-family: ;
-  src: url();
+  font-family: 'aileronregular';
+  src: url('aileron-regular-webfont.woff2') format('woff2'),
+       url('aileron-regular-webfont.woff') format('woff'),
+       url('aileron-regular-webfont.ttf') format('truetype'),
+       url('aileron-regular-webfont.svg#aileronregular') format('svg');
   font-weight: normal;
   font-style: normal;
+
 }
 
 html{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'abhayalibre', serif;
   font-size: 10px;
 }
 
 h1, h2{
-  font-family: ;
+  font-family: 'aileron', Times;
   letter-spacing: 2px;
 }
 
