@@ -25,6 +25,10 @@
             <li><a href="Assignments/Assignment_3">Assignment_3</a></li>
                 <ol>
                     <li><a href="Assignments/Assignment_3/Assignment3_index.html">Assignment3_index</a></li>
+                    <li><a href="Assignments/Assignment_3/A3-P1/Assignment3-Part1.html">Assignment3-Part1</a></li>
+                    <li><a href="Assignments/Assignment_3/A3-P2/Assignment3-Part2.html">Assignment3-Part2</a></li>
+                    <li><a href="Assignments/Assignment_3/A3-P3/Assignmnet3-Part3.html">Assignment3-Part3</a></li>
+                    <li><a href="/Assignments/Assignment_3/A3-P4/Assignment3-Part4.html">Assignment3-Part4</a></li>
                 </ol>
             <li><a href="Assignments/Assignment_4">Assignment_4</a></li>
                 <ol>
