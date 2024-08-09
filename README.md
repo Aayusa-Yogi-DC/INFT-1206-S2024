@@ -34,9 +34,9 @@
                 <ol>
                     <li><a href="Assignments/Assignment_4/Assignment4_index.html">Assignment4_index</a></li>
                     <li><a href="Assignments/Assignment_4/A4-P1/Assignment4_Part1.html">Assignment4-Part1</a></li>
-                    <li><a href="Assignments/Assignment_4/A4-P1/Assignment4_Part1.html">Assignment4-Part2</a></li>
-                    <li><a href="Assignments/Assignment_4/A4-P1/Assignment4_Part1.html">Assignment4-Part3</a></li>
-                    <li><a href="Assignments/Assignment_4/A4-P1/Assignment4_Part1.html">Assignment4-Part4</a></li>
+                    <li><a href="Assignments/Assignment_4/A4-P2/Assignment4_Part2.html">Assignment4-Part2</a></li>
+                    <li><a href="Assignments/Assignment_4/A4-P3/Assignment4_Part3.html">Assignment4-Part3</a></li>
+                    <li><a href="Assignments/Assignment_4/A4-P4/Assignment4_Part4.html">Assignment4-Part4</a></li>
                 </ol>
             <li><a href="Assignments/Assignment_5">Assignment_5</a></li>
                 <ol>
