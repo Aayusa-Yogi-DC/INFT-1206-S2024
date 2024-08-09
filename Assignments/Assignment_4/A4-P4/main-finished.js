@@ -1,5 +1,8 @@
 // set up canvas
 
+const para = document.querySelector('p');
+let count = 0;
+
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
@@ -38,6 +41,7 @@ class Ball extends Shape{
     this.color = color;
     this.size = size;
     this.exists = true;
+    Ball.count++;
   }
 
   draw() {
@@ -83,6 +87,7 @@ class Ball extends Shape{
   }
 }
 
+
 // EvilCircle class extends Shape
 class EvilCircle extends Shape {
   constructor(x, y) {
@@ -115,8 +120,42 @@ class EvilCircle extends Shape {
     ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
     ctx.stroke();
   }
+
+  checkBounds() {
+    if (this.x + this.size >= width) {
+      this.x = width - this.size;
+    }
+
+    if (this.x - this.size <= 0) {
+      this.x = this.size;
+    }
+
+    if (this.y + this.size >= height) {
+      this.y = height - this.size;
+    }
+
+    if (this.y - this.size <= 0) {
+      this.y = this.size;
+    }
+  }
+
+  collisionDetect() {
+    for (const ball of balls) {
+      if (ball.exists) {
+        const dx = this.x - ball.x;
+        const dy = this.y - ball.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + ball.size) {
+          ball.exists = false;
+          Ball.count--; // Decrement the ball count when a ball is "eaten"
+        }
+      }
+    }
+  }
 }
 
+// define array to store balls and populate it
 const balls = [];
 
 while (balls.length < 25) {
@@ -132,7 +171,12 @@ while (balls.length < 25) {
     size
   );
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball count: ' + count;
 }
+
+// Create an instance of EvilCircle
+const evilCircle = new EvilCircle(random(0, width), random(0, height));
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
@@ -146,7 +190,10 @@ function loop() {
   }
 }
 
-  EvilCircle.draw();
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
+
   requestAnimationFrame(loop);
 }
 
