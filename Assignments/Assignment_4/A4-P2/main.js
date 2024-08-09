@@ -22,8 +22,8 @@ const altTexts = [
 for (let i = 0; i < imageFilenames.length; i++) {
     const newImage = document.createElement('img');
 
-    newImage.setAttribute('src', 'images/${imageFilenames[i]}');
-    newImage.setAttribute('alt', altTexts);
+    newImage.setAttribute('src', `images/${imageFilenames[i]}`);
+    newImage.setAttribute('alt', altTexts[i]);
     thumbBar.appendChild(newImage);
 
     // Adding click event to update the displayed image when thumbnail is clicked
