@@ -104,10 +104,12 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
+    if (ball.exists) { // only update and draw balls that exist
     ball.draw();
     ball.update();
     ball.collisionDetect();
   }
+}
 
   requestAnimationFrame(loop);
 }
