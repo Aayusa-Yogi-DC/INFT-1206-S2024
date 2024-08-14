@@ -12,8 +12,9 @@ const height = (canvas.height = window.innerHeight);
 // function to generate random number
 
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+  const num = Math.floor(Math.random()*(max-min)) + min;
+  return num;
+};
 
 // function to generate random RGB color value
 
@@ -38,10 +39,10 @@ class Ball extends Shape{
 
   constructor(x, y, velX, velY, color, size) {
     super(x, y, velX, velY);
+
     this.color = color;
     this.size = size;
     this.exists = true;
-    Ball.count++;
   }
 
   draw() {
@@ -53,19 +54,19 @@ class Ball extends Shape{
 
   update() {
     if (this.x + this.size >= width) {
-      this.velX = -Math.abs(this.velX);
+      this.velX = -(this.velX);
     }
 
     if (this.x - this.size <= 0) {
-      this.velX = Math.abs(this.velX);
+      this.velX = -(this.velX);
     }
 
     if (this.y + this.size >= height) {
-      this.velY = -Math.abs(this.velY);
+      this.velY = -(this.velY);
     }
 
     if (this.y - this.size <= 0) {
-      this.velY = Math.abs(this.velY);
+      this.velY = -(this.velY);
     }
 
     this.x += this.velX;
@@ -90,8 +91,10 @@ class Ball extends Shape{
 
 // EvilCircle class extends Shape
 class EvilCircle extends Shape {
+
   constructor(x, y) {
     super(x, y, 20, 20); // velX and velY are hardcoded to 20
+
     this.color = "white";
     this.size = 10;
 
@@ -148,7 +151,8 @@ class EvilCircle extends Shape {
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
-          Ball.count--; // Decrement the ball count when a ball is "eaten"
+          count--;
+          para.textContent = 'Ball count: ' + count;
         }
       }
     }
