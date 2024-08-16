@@ -1,9 +1,7 @@
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
-showHideBtn.setAttribute('role', 'button');
 const commentWrapper = document.querySelector('.comment-wrapper');
-commentWrapper.style.display = 'none';
 
 commentWrapper.style.display = 'none';
 
@@ -17,16 +15,6 @@ showHideBtn.onclick = function() {
     commentWrapper.style.display = 'none';
   }
 };
-
-// Add keyboard accessibility for Enter key press
-showHideBtn.addEventListener('keydown', function(event) {
-  console.log('Key pressed:', event.key);
-  if (event.key === 'Enter') {
-    console.log('Enter key pressed');
-    // Simulate click behavior on Enter key press
-    this.click();
-  }
-});
 
 // functionality for adding a new comment via the comments form
 
