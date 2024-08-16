@@ -41,6 +41,7 @@
             <li><a href="Assignments/Assignment_5">Assignment_5</a></li>
                 <ol>
                     <li><a href="Assignments/Assignment_5/Assignment5_index.html">Assignment5_index</a></li>
+                    <li><a href="Assignments/Assignment_5/Assignment5-Part1.html">Assignment5_Part1</a></li>
                 </ol>
         </ul>
     </li>
